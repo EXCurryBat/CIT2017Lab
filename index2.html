@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planet Kittens!</title>
+        <style>
+            #control {
+                background-color:rgba(200,200,200,0.5);
+                width:50vw;
+                height:40vh;
+                position:fixed;
+                left:0px;
+                right:0px;
+                top:0px;
+                bottom:0px;
+                margin:auto;
+            }
+            #avatar {
+                position:relative;
+                height:auto;
+                border-radius:98px;
+                width:256px;
+                left:-128px;
+                top:-98px;
+                opacity: 0.8;
+            }
+            .big {
+                width:100vw;
+                height:auto;
+            }
+            .thumbs {
+                height:100px;
+                width:auto;
+                margin:0px 5px 0px 5px
+            }
+            #smallImgs {
+                position:relative;
+                bottom:100px;
+                left:50px;
+            }
+            #bigImgs {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100vw;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="bigImgs">
+            <img class="big" src="avatar.jpg"/>
+            <img class="big" src="jupiter.jpg"/>
+            <img class="big" src="mars.jpg"/>
+        </div>
+        <div id="control">
+            <img id="avatar" src="earth.jpg"/>
+            <div id="smallImgs">
+                <img class="thumbs" src="a.jpg"/>
+                <img class="thumbs" src="b.jpg"/>
+                <img class="thumbs" src="c.jpg"/>
+            </div>
+        </div>
+    
+    </body>
+</html>
