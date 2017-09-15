@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            My Github Page
-        </title>
+        <title>My Github Page</title>
+        <style>
+            .boxes {
+                background-color:#FAB;
+                width:100px;
+                height:100px;
+                display:block;
+                margin:10px 0px 20px 0px;
+            }
+            /*top left bottom right*/
+            #relBox {
+                position:relative;
+                left: 10px;
+                top: 20px;
+            }
+            #absBox, #absBox2 {
+                position:absolute;
+                background-color:purple;
+                bottom: 10px;
+                right: 10px;
+                width: 50px;
+                height: 50px;
+            }
+            #display {
+                 background-image: url(1.jpg)
+            }
+        </style>
     </head>
     
     <body>
-        Welcome to y github page
-        <br/> Add commit push
+        <div id="display">
+            <div class="boxes"></div>
+            <div class="boxes" id="relBox">
+                <div id="absBox"></div>    
+            </div>
+            <div class="boxes" id="absBox"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+        </div>
     </body>
 </html>
