@@ -1,0 +1,113 @@
+#background {
+    background-image:url(bg1.jpg);
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+}
+
+#control {
+    top:-40px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    position:fixed;
+    height:40px;
+    width:450px;
+    text-align: center;
+    object-fit: contain;
+    background-color: rgba(200,200,200,0.5);
+    transition: 1s;
+}
+
+#panel {
+    position: relative;
+    width:50px;
+    height:100%;
+    float:left;
+}
+
+.button {
+    width:100%;
+    height:100%;
+}
+
+#open {
+    position: absolute;
+    height:30px;
+    width:30px;
+    left:0px;
+    bottom:-28px;
+}
+
+#openImg {
+    height:100%;
+    width:100%;
+}
+
+#close {
+    position: absolute;
+    height:30px;
+    width:30px;
+    right:0px;
+    bottom:-28px;
+}
+
+#closeImg {
+    height:100%;
+    width:100%;
+}
+
+#reset {
+    position: absolute;
+    height:30px;
+    width:120px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    bottom:-30px;
+}
+
+#resetbut {
+    height:100%;
+    width:100%;
+}
+
+#img1 {
+    position: absolute;
+    top:100px;
+    left:0px;
+    right:0px;
+    height:200px;
+    width:auto;
+    margin:auto;
+}
+
+#img2 {
+    position: absolute;
+    top:0px;
+    left:100px;
+    bottom:0px;
+    margin:auto;
+    height:200px;
+    width:auto;
+}
+
+#img3 {
+    position: absolute;
+    bottom:100px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    height:200px;
+    width:auto;
+}
+
+#img4 {
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    right:100px;
+    margin:auto;
+    height:200px;
+    width:auto;
+}
