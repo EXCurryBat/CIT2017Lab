@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Img Move</title>
+    </head>
+    
+    <style>
+        #box {
+            position:absolute;
+            left:0px;
+            right:0px;
+            top:0px;
+            bottom:0px;
+            margin:auto;
+            width:300px;
+            height:200px;
+        }
+        
+        #theImg {
+            width:100%;
+            height:100%;
+        }
+        
+        .buts {
+            position:absolute;
+        }
+        
+        .vert {
+            width:50px;
+            left:0px;
+            right:0px;
+            margin:auto;
+        }
+        
+        #up {
+            top:-50px;
+        }
+        
+        #down {
+            bottom:-50px;
+        }
+        
+        #left {
+            left:-30px;
+            top:40%;
+        }
+        
+        #right {
+            right:-30px;
+            top:40%;
+        }
+    </style>
+    <body>
+        
+        <div id="box">
+            <button id="up" class="buts vert">Up</button>
+            <button id="down" class="buts vert">Down</button>
+            <button id="left" class="buts">Left</button>
+            <button id="right" class="buts">Right</button>
+            <img id="theImg" src="owl.jpg" />
+        </div>
+        
+        <script>
+            //get the element
+            
+            //give it a click
+            
+            //change left/right, or the top/bottom of the styles. But NOT both
+            
+            var myBox = document.getElementById("box");
+            //Inspect Element
+            document.getElementById("up").addEventListener("click", function(){
+                myBox.style.top = "-100px"; 
+            });
+            
+            document.getElementById("down").addEventListener("click", function(){
+                myBox.style.top = "100px"; 
+            });
+            
+            document.getElementById("left").addEventListener("click", function(){
+                myBox.style.left = "-100px"; 
+            });
+            
+            document.getElementById("right").addEventListener("click", function(){
+                myBox.style.left = "100px"; 
+            });
+        </script>
+    </body>
+</html>

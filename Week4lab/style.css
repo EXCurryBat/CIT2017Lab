@@ -7,6 +7,7 @@
     height:500px;
     margin:auto;
     position: absolute;
+    transition:1s;
 }
 
 #cenImg {
@@ -14,11 +15,8 @@
     height:100%;
 }
 
-#cen {
-    width:500px;
-    height:500px;
-    position:absolute;
-    transition: 1s;
+.but {
+    background-color:rgba(0, 0, 0, 0.5);
 }
 
 #up {
@@ -28,7 +26,7 @@
     left:200px;
     position:absolute;
     top:-100px;
-    background-color:rgba(200, 200, 200, 0.5);
+
 }
 
 #down {
@@ -38,7 +36,6 @@
     left:200px;
     position:absolute;
     bottom:-100px;
-    background-color:rgba(200, 200, 200, 0.5);
 }
     
 #left {
@@ -48,7 +45,6 @@
     bottom:200px;
     position:absolute;
     left:-100px;
-    background-color:rgba(200, 200, 200, 0.5);
 }
 
 #right {
@@ -58,7 +54,6 @@
     bottom:200px;
     position:absolute;
     right:-100px;
-    background-color:rgba(200, 200, 200, 0.5);
 }
 
 #upImg {
