@@ -1,0 +1,51 @@
+#panel {
+    height:150px;
+    width:80px;
+    text-align: center;
+    position:fixed;
+    top:-150px;
+    left:15px;
+    background-color: aqua;
+    transition:1s;
+}
+
+.buts {
+    width:80%;
+    margin-top:10px;
+    height:auto;
+    
+}
+
+#control {
+    position:absolute;
+    width:100%;
+    height:30px;
+    bottom:-30px;
+}
+
+#ctrlbut {
+    display: inline-block;
+    width:80%;
+}
+
+#center {
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    position:absolute;
+    width:60vw;
+    height:60vh;
+    border: solid 5px #AAF;
+    background-size: cover;
+}
+
+#textinput {
+    width:80%;
+    margin-top: 10px;
+}
+
+#rangeinput {
+    width:80%;
+}
