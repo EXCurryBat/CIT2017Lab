@@ -1,6 +1,46 @@
 var cenImg = document.getElementById("center");
 var xposition = 0;
 var yposition = 0;
+var sliderwidth;
+var imgadd;
+var addImg;
+
+document.getElementById("empty").addEventListener("click", function(){
+    document.getElementById("pics").innerHTML='';
+})
+
+function createImg(){
+    addImg = cenImg.style.backgroundImage.url;
+    
+    var ndiv=document.createElement("div");
+    var nimg=document.createElement("img");
+    
+    ndiv.className="thumbDiv";
+    /*nimg.className="thumbImg";
+    
+    ndiv.appendChild(nimg);*/
+    ndiv.style.backgroundImage = "url("+imgadd+")";
+    
+    document.getElementById("pics").appendChild(ndiv);
+    
+}
+
+document.getElementById("add").addEventListener("click", function(){
+    createImg();
+})
+
+document.getElementById("textinput").addEventListener("keyup", function(ev){
+    if(ev.keyCode == 13){
+        imgadd = document.getElementById("textinput").value;
+        cenImg.style.backgroundImage = "url("+imgadd+")";
+    };
+    
+})
+
+document.getElementById("rangeinput").addEventListener("change", function(){
+    sliderwidth = document.getElementById("rangeinput").value;
+    document.getElementById("center").style.width =sliderwidth + "vw";
+})
 
 document.getElementById("ctrlbut").addEventListener("click", function () {
     document.getElementById("panel").style.top = "0px";
