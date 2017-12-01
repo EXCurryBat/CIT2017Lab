@@ -1,0 +1,40 @@
+#controls {
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100px;
+}
+
+#controls input {
+    width:100%;
+}
+
+#display {
+    width:50vw;
+    height:30vh;
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+}
+
+#display img {
+    height:100%;
+}
+
+#users {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+}
+
+.user {
+    display:inline-block;
+}
+
+.userImg {
+    height:100px;
+    width:auto;
+}

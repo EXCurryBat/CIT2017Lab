@@ -1,9 +1,9 @@
 #panel {
-    height:150px;
+    height:200px;
     width:80px;
     text-align: center;
     position:fixed;
-    top:-150px;
+    top:-200px;
     left:15px;
     background-color: aqua;
     transition:1s;
@@ -48,4 +48,27 @@
 
 #rangeinput {
     width:80%;
+}
+
+#pics {
+    position:absolute;
+    height:100px;
+    width:100%;
+    bottom:-100px;
+    background-color: aqua;
+}
+
+.thumbDiv {
+    display: inline-block;
+    height:100px;
+    width:100px;
+    background-size: cover;
+}
+
+#conditions {
+    position:fixed;
+    height:30px;
+    width:200px;
+    bottom:10px;
+    background-color: bisque;
 }
