@@ -109,13 +109,15 @@ document.getElementById("newImg").addEventListener("click", function(){
     ndiv.appendChild(nimg);
     ndiv.appendChild(ndiv2);
     document.getElementById("display").appendChild(ndiv);
-    arr.push(ndiv);
+    arr.push(nimg);
+    console.log(arr)
 });
 
 document.getElementById("saveImg").addEventListener("click", function(){
     var arrText = JSON.stringify(arr);
     localStorage.setItem("items",arrText);
-    console.log(arr);
+    console.log(arrText);
+    console.log(Object.assign(arr));
 })
 
 document.getElementById("loadImg").addEventListener("click", function(){
