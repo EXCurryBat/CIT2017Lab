@@ -1,0 +1,62 @@
+#controls {
+    position:fixed;
+    left:50px;
+    top:0px;
+    border: solid black 2px;
+    height:auto;
+    width:auto;
+    text-align: center;
+    vertical-align: middle;
+    display:block;
+}
+
+.butts {
+    margin:5px;
+}
+
+#imgurl {
+    margin:5px;
+}
+
+#title {
+    margin:5px;
+}
+
+#openctrl {
+    position:absolute;
+    bottom:-30px;
+    height:30px;
+    left:0px;
+}
+
+#display {
+    position:fixed;
+    left:50px;
+    top:100px;
+    width:30vw;
+    height:30vh;
+    background-color: bisque;
+}
+
+#dispimg {
+    width:300px;
+    height:150px;
+}
+
+#disptitle {
+    bottom:10px;
+    left:10px;
+    position:absolute;
+}
+
+#locsave {
+    position:fixed;
+    left:25px;
+    bottom:25px;
+}
+
+#olfetch {
+    position:fixed;
+    right:25px;
+    bottom:25px;
+}
