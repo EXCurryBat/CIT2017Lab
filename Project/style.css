@@ -1,0 +1,36 @@
+#pagehead {
+    width:100vw;
+    height:20vh;
+    background-image: url(imgs/logo.jpg);
+    background-size: contain;
+    border-bottom-style: ridge;
+    border-color:burlywood;
+}
+
+#controlpanel {
+    position: fixed;
+    left:0px;
+    width:200px;
+    height: auto;
+    display:inline-block;
+    border-right-style: ridge;
+    border-bottom-style: ridge;
+    border-color:burlywood;
+    text-align: center;
+}
+
+.controls {
+    cursor: pointer;
+    height:30px;
+    width:100%;
+}
+
+body {
+    margin: 0px;
+}
+
+.imgBorder {
+  padding: 15px 15px 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}

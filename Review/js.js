@@ -42,6 +42,11 @@ document.getElementById("rangeinput").addEventListener("change", function(){
     document.getElementById("center").style.width =sliderwidth + "vw";
 })
 
+document.getElementById("rangeinput").addEventListener("change", function(){
+    var imgwidth = document.getElementById("rangeinput").value;
+    cenImg.style.width = imgwidth+"vw";
+})
+
 document.getElementById("ctrlbut").addEventListener("click", function () {
     document.getElementById("panel").style.top = "0px";
 });
@@ -77,7 +82,7 @@ function moveImgy(ynum) {
     cenImg.style.backgroundPosition = xposition + "px" + " " + yposition + "px";
 }
 
-document.body.addEventListener("keyup", function(ev) {
+document.body.addEventListener("keydown", function(ev) {
     if(ev.keyCode == 37){
         moveImgx(-10);
     } else if(ev.keyCode == 39){
