@@ -40,6 +40,12 @@
     bottom:90px;
 }
 
+#display {
+    position:static;
+    width:100vw;
+    height:75vh;
+}
+
 .tscript {
     background-image:url(imgs/textbg.jpg);
     z-index: 999;
@@ -125,6 +131,22 @@
     background-size:cover;
 }
 
+#freemaptext {
+    display:none;
+}
+
+#enltext {
+    display:none;
+}
+
+#dlctext {
+    display:none;
+}
+
+#statistics {
+    display:none;
+}
+
 #enginfo {
     display:none;
     position:absolute;
@@ -204,7 +226,7 @@
     border-style: ridge;
     border-color:burlywood;
     text-align: center;
-    top:22%;
+    top:25%;
     font-size: 24px;
     color: red;
 }
@@ -232,6 +254,7 @@ body {
     height:100px;
     width:auto;
     position:relative;
+    transition:5s;
 }
 
 #santa:hover {
@@ -253,6 +276,15 @@ body {
     width: 100%;
     height:100%;
     margin:0;
+}
+
+#freemap {
+    width:100%;
+    height:100%;
+    position:static;
+    background-image: url(imgs/worldmap.png);   
+    display:none;
+    background-position:  0 0;
 }
 
 #map {
@@ -287,6 +319,234 @@ body {
     background-repeat: no-repeat;
 }
 
-#exploration {
-    
+#enldiv {
+    width:100%;
+    height:100%;
+    position: static;
+    background-image: url(imgs/paperbg.jpg);
+    background-size: cover;
+    display:none;
+}
+
+#enlmap {
+    width:60%;
+    height:70%;
+    position: absolute;
+    left:0;
+    right:0;
+    top:200px;
+    bottom:0;
+    margin: auto;
+    background-image: url(imgs/enlmap.PNG);
+    background-repeat: no-repeat;
+}
+
+#ruscamp {
+    display: none;
+    width:100%;
+    height:100%;
+    background-image: url(imgs/paperbg.jpg);
+    background-size: cover;
+    position:static;
+}
+
+#enclo {
+    position:absolute;
+    top:40%;
+    left:-5%;
+    width:60px;
+    height:100px;
+    background-image: url(imgs/encyclopedia.jpg);
+    background-size: contain;
+}
+
+#nenclo {
+    background-image:url(imgs/textbg.jpg);
+    z-index: 999;
+    text-align:center;
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    border-style: ridge;
+    border-color:burlywood;
+    padding: 3px;
+    font-size: 20px;
+    position:absolute;
+    top:0px;
+    width:50%;
+    left:25%;
+    display:none;
+}
+
+.enlthumb {
+    position:absolute;
+    width:30px;
+    height:50px;
+    background-image: url(imgs/encyclopedia.jpg);
+    background-size: contain;
+    transition:2s;
+}
+
+#rusmap {
+    background-image: url(imgs/europemap.png);
+    width:60%;
+    height:60%;
+    position: absolute;
+    left:0;
+    right:0;
+    top:200px;
+    bottom:0;
+    margin: auto;
+    background-image: url(imgs/rusmap.PNG);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#snowcloud {
+    position: absolute;
+    width:200px;
+    height:200px;
+    left:40%;
+    top:30%;
+    background-image: url(imgs/cloud.png);
+    background-size: contain;
+}
+
+.snowflake {
+    transition:0.05s;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+#dlcsect {
+    display: none;
+    width:100%;
+    height:100%;
+    background-image: url(imgs/paperbg.jpg);
+    background-size: cover;
+    position:static;
+}
+
+#kwdiv {
+    position:absolute;
+    top: 100px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:300px;
+    height:300px;
+    background-image:url(imgs/textbg.jpg);
+    text-align:center;
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    border-style: ridge;
+    border-color:burlywood;
+    padding: 3px;
+    font-size: 20px;
+}
+
+#kwbox {
+    width:60%;
+    height:40px;
+}
+
+#pricelimit {
+    width:60%;
+    height:40px;
+    margin:0;
+}
+
+#result {
+    display:none;
+    position:absolute;
+    top: 100px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:300px;
+    height:400px;
+    background-image:url(imgs/textbg.jpg);
+    text-align:center;
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    border-style: ridge;
+    border-color:burlywood;
+    padding: 3px;
+    font-size: 20px;
+}
+
+#ret {
+    position: absolute;
+    height:30px;
+    width:30%;
+    left:35%;
+    bottom: -30px;
+    background-image: url(imgs/paperbg.jpg);
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    font-size: 20px;
+    border-style: ridge;
+    border-color:burlywood;
+    cursor: url(imgs/embark.png), auto;
+    z-index:995;
+}
+
+#kwstats {
+    display:none;
+    width:100%;
+    height:100%;
+    background-image: url(imgs/paperbg.jpg);
+    background-size: cover;
+    position:static;
+}
+
+#statdisp {
+    position:absolute;
+    top: 100px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:300px;
+    height:450px;
+    background-image:url(imgs/textbg.jpg);
+    text-align:center;
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    border-style: ridge;
+    border-color:burlywood;
+    padding: 3px;
+    font-size: 18px;
+}
+
+#saveloc {
+    position: absolute;
+    height:30px;
+    width:50%;
+    left:25%;
+    bottom: 60px;
+    background-image: url(imgs/paperbg.jpg);
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    font-size: 20px;
+    border-style: ridge;
+    border-color:burlywood;
+    cursor: url(imgs/embark.png), auto;
+}
+
+#loadloc {
+    position: absolute;
+    height:30px;
+    width:50%;
+    left:25%;
+    bottom: 20px;
+    background-image: url(imgs/paperbg.jpg);
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    font-size: 20px;
+    border-style: ridge;
+    border-color:burlywood;
+    cursor: url(imgs/embark.png), auto;
 }

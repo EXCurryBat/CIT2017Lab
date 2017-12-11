@@ -28,18 +28,14 @@
         
         <div id="contentinfo">
             <div id="controlpanel">
-                Timeline
+                Points of interest
                 <button class="controls" id='hyw'>Surrender of Maine</button>
                 <button class="controls" id="aoexp">Age of exploration</button>
+                <button class="controls" id='enlightenment'>The Enlightenment</button>
                 <button class="controls" id="russian">Russian Campaign</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
+                
+                <button class="controls" id='dlcbut'>DLC</button>
+                <button class="controls" id='stats'>Keyword Popularity</button>
             </div>
             
             <div class='tscript' id='textbox'>
@@ -51,6 +47,9 @@
                     Europa Universalis IV is a grand strategy game spanning over 370 years of human history.<br><br>
                     ...to the death of Napoleon Bonaparte.
                 </div>
+                <div id='freemaptext'>
+                    This is a year 1444 map of the world with fog of war removed.  Feel free to browse around with arrow keys.  
+                </div>
                 <div id='maine'>
                     The surrender of Maine was one of the key events that marked the end of the Hundred Years' War.<br><br>
                     Select one of the Hundred Years' War countries to learn about their starting situation.<br><br>
@@ -61,9 +60,25 @@
                     Christopher Columbus traveled from Canary Islands, Spain to San Salvador in the Bahamas.<br><br>
                     Click on his ship to start the voyage.
                 </div>
+                <div id='enltext'>
+                    The Enlightenment<br><br>
+                    The Enlightenment included a range of ideas centered on reason as the primary source of authority and legitimacy, and came to advance ideals like liberty, progress, tolerance, fraternity, constitutional government and separation of church and state.<br><br>
+                    The circulation of the Encyclopedia is one of the most important factors of the Enlightenment. Click on a location on the map to distribute an encyclopedia.  
+                </div>
                 <div id='rustext'>
                     The French invasion of Russia, known in Russia as the Patriotic War of 1812 (Russian: Отечественная война 1812 года Otechestvennaya Voyna 1812 Goda) and in France as the Russian Campaign (French: Campagne de Russie), began on 24 June 1812 when Napoleon's Grande Armée crossed the Neman River in an attempt to engage and defeat the Russian army.<br><br> 
-                    Napoleon hoped to compel Tsar Alexander I of Russia to cease trading with British merchants through proxies in an effort to pressure the United Kingdom to sue for peace. The official political aim of the campaign was to liberate Poland from the threat of Russia. Napoleon named the campaign the Second Polish War to gain favor with the Poles and provide a political pretext for his actions.
+                    His worst enemy turned out to be the Russian winter.  Click on the blue cloud to start snow.  Click again to stop.  
+                </div>
+                <div id='dlctext'>
+                    DLC - Downloadable Content<br><br>
+                    The total cost for the game including all DLC's is at $384.71.  This is a huge price tag for new players to consider buying.<br><br>
+                    Fortunately in this section you can specify aspects of a game that interests you, press enter and a recommended DLC list will be generated for you.  
+                </div>
+                <div id='statistics'>
+                    Keyword Popularity<br><br>
+                    This page shows a list of the keywords and how many times they have been searched.<br><br>
+                    This information can be saved locally and loaded at a later time.<br><br>
+                    You have reached the end of this website!
                 </div>
                 <img id='openclose' src="imgs/qm.png" />
                 <button id='continue'>Continue</button>
@@ -73,6 +88,7 @@
                 <div id='homepage'>
                     <div id='varna'></div>
                     <div id='napoleon'></div>
+                    <div id='freemap'></div>
                 </div>
                 
                 <div id='intro'>
@@ -93,13 +109,6 @@
                     </div>
                 </div>
                 
-                <div id='fourages'>
-                    <img id='exploration'>
-                    <div id='reformation'></div>
-                    <div id='absolutism'></div>
-                    <div id='enlightenment'></div>
-                </div>
-                
                 <div id="map">
                     <img id="santa" src="imgs/santa.png" />
                     <div id='chriscol'>
@@ -108,21 +117,37 @@
                     </div>
                 </div>
                 
+                <div id='enldiv'>
+                    <div id='enlmap'>
+                        <div id='enclo'></div>
+                        <div id='nenclo'></div>
+                    </div>
+                </div>
+                
                 <div id='ruscamp'>
-                    <div id='snow'></div>
+                    <div id='rusmap'>
+                        <div id='snowcloud'></div>
+                    </div>
                 </div>
                 
-                <div id="refor">
-                
+                <div id='dlcsect'>
+                    <div id='kwdiv'>Please enter aspects of a game that interests you from:<br><br> Exploration, Colonization, Trade, Religion, Government, Diplomacy, War, Development, Espionage, Nomad, Asia, Russia, Persia, Fun.<br><br>
+                    <input type='text' id='kwbox' placeholder="Enter key words here." />
+                    <input type='number' id='pricelimit' placeholder='Enter price 43.99 to 400' min='43.99' max='400'/>
+                    </div>
+                    <div id='result'>
+                        <div id='resulttext'></div>
+                        <button id='ret'>Return</button>
+                    </div>
+                    
                 </div>
                 
-                <div id='absol'>
-                
-                </div>
-                
-                <div id='enlight'>
-            
-            
+                <div id='kwstats'>
+                    <div id='statdisp'>
+                        <div id='stattext'></div>
+                        <button id='saveloc'>Save stats</button>
+                        <button id='loadloc'>Load stats</button>
+                    </div>
                 </div>
             </div>
         </div>
