@@ -313,7 +313,7 @@ document.getElementById('continue').addEventListener('click', function(){
         opendlc();
     }else if(pagecount==7){
         openstats();
-    }
+    }else if(pagecount==8){}
 });
 
 document.getElementById('seleng').addEventListener('click', function(e){
