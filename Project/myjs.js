@@ -266,6 +266,7 @@ function openstats(){
         statlist.push(key+' '+savelist[key]+'<br>');
     }
     document.getElementById('stattext').innerHTML='Keyword Popularity<br><br>'+statlist.join(' ');
+    pagecount=8;
 }
 
 function savestats(){
