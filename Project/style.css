@@ -1,36 +1,292 @@
 #pagehead {
     width:100vw;
-    height:20vh;
-    background-image: url(imgs/logo.jpg);
-    background-size: contain;
+    height:200px;
+    background-image: url(imgs/paperbg.jpg);
+    background-size: cover;
     border-bottom-style: ridge;
     border-color:burlywood;
+    position: fixed;
+    display: inline-block;
+}
+
+#eu4logo {
+    width:auto;
+    height:100%;
+    display: inline;
+}
+
+#dlcdisp {
+    position: relative;
+    left: 30px;
+    height:100%;
+    width:auto;
+    display: inline;
+}
+
+.dlcs {
+    height:100%;
+    width: auto;
+}
+
+#ldlc {
+    position: absolute;
+    left:-10px;
+    bottom:90px;
+}
+
+#rdlc {
+    position: absolute;
+    right:-10px;
+    bottom:90px;
+}
+
+.tscript {
+    background-image:url(imgs/textbg.jpg);
+    z-index: 999;
+    text-align:center;
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    border-style: ridge;
+    border-color:burlywood;
+    padding: 3px;
+    font-size: 20px;
+}
+
+#textbox {
+    position: fixed;
+    width:300px;
+    height:auto;
+    right:0px;
+    top:220px;
+    transition:2s;
+}
+
+#hometext {
+    display:none;
+}
+
+#firstvoyage {
+    display: none;
+}
+
+#maine {
+    display: none;
+}
+
+#rustext {
+    display: none;
+}
+
+#openclose {
+    position:absolute;
+    top:0;
+    left:-40px;
+    width:40px;
+    height:auto;
+}
+
+#continue {
+    position: absolute;
+    height:40px;
+    width:120px;
+    left:90px;
+    bottom: -42px;
+    background-image: url(imgs/paperbg.jpg);
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    font-size: 20px;
+    border-style: ridge;
+    border-color:burlywood;
+    cursor: url(imgs/embark.png), auto;
+}
+
+#homepage {
+    width:100%;
+    height:100%;
+    position: static;
+    text-align: center;
+}
+
+#varna {
+    width:100%;
+    height:100%;
+    position: static;
+    display:block;
+    background-image: url(imgs/varna.png);
+    background-size: cover;
+}
+
+#napoleon {
+    width:100%;
+    height:100%;
+    position: static;
+    display: none;
+    background-image: url(imgs/napoleon.jpg);
+    background-size:cover;
+}
+
+#enginfo {
+    display:none;
+    position:absolute;
+    width:400px;
+    height:450px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+#frainfo {
+    display:none;
+    position:absolute;
+    width:400px;
+    height:400px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+.ripple {
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    border: 1px solid rgb(255, 223, 0);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(250, 215, 0, 0.6);
+    position: absolute;
+    animation: ripeffect 3s infinite;
+}
+
+#seleng {
+    top:250px;
+    left:350px;
+}
+
+#selfra {
+    top:400px;
+    left:410px;
+}
+
+@keyframes ripeffect {
+    0% { transform: scale(0.1);}
+    100% { transform: scale(5);}
+}
+
+#chriscol {
+    display: none;
+    width:300px;
+    height:380px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    background-image:url(imgs/textbg.jpg);
+    z-index: 998;
+    text-align:center;
+    color:gold; 
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    border-style: ridge;
+    border-color:burlywood;
+    padding: 3px;
+    font-size: 20px;
 }
 
 #controlpanel {
     position: fixed;
     left:0px;
-    width:200px;
+    width:150px;
     height: auto;
     display:inline-block;
-    border-right-style: ridge;
-    border-bottom-style: ridge;
+    border-style: ridge;
     border-color:burlywood;
     text-align: center;
+    top:22%;
+    font-size: 24px;
+    color: red;
 }
 
 .controls {
-    cursor: pointer;
+    cursor: url(imgs/embark.png), auto;
     height:30px;
     width:100%;
+    background-image: url(imgs/paperbg.jpg);
+    color:cornsilk;
 }
 
 body {
     margin: 0px;
+    cursor: url(imgs/embark.png), auto;
 }
 
 .imgBorder {
   padding: 15px 15px 0;
   background-color: white;
   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+#santa {
+    height:100px;
+    width:auto;
+    position:relative;
+}
+
+#santa:hover {
+    animation: shiprotate 1.5s infinite;
+}
+
+@keyframes shiprotate {
+    25% { transform: rotate(20deg); animation-timing-function: ease-out;}
+    75% { transform: rotate(-20deg); animation-timing-function: ease-in;}
+}
+
+#contentinfo {
+    margin:0;
+    width:100vw;
+    height:100vh;
+}
+
+#display {
+    width: 100%;
+    height:100%;
+    margin:0;
+}
+
+#map {
+    width:100%;
+    height:100%;
+    position:static;
+    background-image: url(imgs/worldmap.png);   
+    transition: 5s;
+    display:none;
+}
+
+#intro {
+    width:100%;
+    height:100%;
+    position: static;
+    background-image: url(imgs/paperbg.jpg);
+    background-size: cover;
+    display:none;
+}
+
+#intromap {
+    width:60%;
+    height:60%;
+    position: absolute;
+    left:0;
+    right:0;
+    top:200px;
+    bottom:0;
+    margin: auto;
+    background-image: url(imgs/europemap.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+#exploration {
+    
 }

@@ -7,23 +7,31 @@
     
     <body>
         <div id="pagehead">
-            
+            <img id='eu4logo' src="imgs/logo.jpg" />
+            <div id='dlcdisp'>
+                <img class='dlcs' src="imgs/EU4cop.png" />
+                <img class='dlcs' src="imgs/eu4won.png" />
+                <img class='dlcs' src="imgs/EU4rrp.png" />
+                <img class='dlcs' src="imgs/EU4aow.png" />
+                <img class='dlcs' src="imgs/EU4ed.png" />
+                <img class='dlcs' src="imgs/EU4cs.png" />
+                <img class='dlcs' src="imgs/EU4tc.png" />
+                <img class='dlcs' src="imgs/EU4mn.png" />
+                <img class='dlcs' src="imgs/EU4rom.png" />
+                <img class='dlcs' src="imgs/EU4moh.png" />
+                <img class='dlcs' src="imgs/EU4tr.png" />
+                <img class='dlcs' src="imgs/EU4CoC.png" />
+                <button id='ldlc'>&#10094;</button>
+                <button id='rdlc'>&#10095;</button>
+            </div>
         </div>
         
         <div id="contentinfo">
             <div id="controlpanel">
-                Navigation
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
-                <button class="controls">Button</button>
+                Timeline
+                <button class="controls" id='hyw'>Surrender of Maine</button>
+                <button class="controls" id="aoexp">Age of exploration</button>
+                <button class="controls" id="russian">Russian Campaign</button>
                 <button class="controls">Button</button>
                 <button class="controls">Button</button>
                 <button class="controls">Button</button>
@@ -34,8 +42,88 @@
                 <button class="controls">Button</button>
             </div>
             
-            <div id="display">
+            <div class='tscript' id='textbox'>
+                <div id='curtext'>
+                    Europa Universalis IV is a grand strategy game spanning over 370 years of human history.<br><br>
+                    From the end of the Crusade of Varna...
+                </div>
+                <div id='hometext'>
+                    Europa Universalis IV is a grand strategy game spanning over 370 years of human history.<br><br>
+                    ...to the death of Napoleon Bonaparte.
+                </div>
+                <div id='maine'>
+                    The surrender of Maine was one of the key events that marked the end of the Hundred Years' War.<br><br>
+                    Select one of the Hundred Years' War countries to learn about their starting situation.<br><br>
+                    Click anywhere to close.
+                </div>
+                <div id='firstvoyage'>
+                    Age of Exploration<br><br>
+                    Christopher Columbus traveled from Canary Islands, Spain to San Salvador in the Bahamas.<br><br>
+                    Click on his ship to start the voyage.
+                </div>
+                <div id='rustext'>
+                    The French invasion of Russia, known in Russia as the Patriotic War of 1812 (Russian: Отечественная война 1812 года Otechestvennaya Voyna 1812 Goda) and in France as the Russian Campaign (French: Campagne de Russie), began on 24 June 1812 when Napoleon's Grande Armée crossed the Neman River in an attempt to engage and defeat the Russian army.<br><br> 
+                    Napoleon hoped to compel Tsar Alexander I of Russia to cease trading with British merchants through proxies in an effort to pressure the United Kingdom to sue for peace. The official political aim of the campaign was to liberate Poland from the threat of Russia. Napoleon named the campaign the Second Polish War to gain favor with the Poles and provide a political pretext for his actions.
+                </div>
+                <img id='openclose' src="imgs/qm.png" />
+                <button id='continue'>Continue</button>
+            </div>
             
+            <div id="display">
+                <div id='homepage'>
+                    <div id='varna'></div>
+                    <div id='napoleon'></div>
+                </div>
+                
+                <div id='intro'>
+                    <div id='intromap'>
+                        <div class='ripple' id='seleng'></div>
+                        <div class='ripple' id='selfra'></div> 
+                        <div class='tscript' id='enginfo'>
+                            England<br><br>
+                            In exchange for accepting the treaty of Tours in 1444 the county of Maine was promised to France. In practice however this has still not come to pass. No English governor wants to be remembered as the one to surrender Maine and in London prominent nobles are claiming that our negotiator, William de la Pole, had no mandate to make this concession in the first place.<br><br>
+                            French emissaries have repeatedly tried to remind us of this ever since the signing and Henry VI has now finally taken matters in his own hands and shown up at the walls of Le Mans, demanding the city to surrender.
+                            Unless we surrender Maine to the French we are very likely looking at a hasty resumption of hostilities.</div>
+                        <div class='tscript' id='frainfo'>
+                            France<br><br>
+                            In exchange for accepting the treaty of Tours in 1444 the county of Maine was promised to France. In practice however this has still not come to pass. The English have repeatedly evaded the question and it is becoming increasingly clear that many in the English camp are arguing that the treaty will not be honored. <br><br>
+                            In one last attempt to force the question Henry VI has approached the county capital, Le Mans, himself and demanded the surrender of the city.
+                            The local commander however shows no signs of intending to open the gates, despite not having a force strong enough to withstand an attack.
+                        </div>
+                    </div>
+                </div>
+                
+                <div id='fourages'>
+                    <img id='exploration'>
+                    <div id='reformation'></div>
+                    <div id='absolutism'></div>
+                    <div id='enlightenment'></div>
+                </div>
+                
+                <div id="map">
+                    <img id="santa" src="imgs/santa.png" />
+                    <div id='chriscol'>
+                        For nearly five months, Columbus explored the Caribbean, particularly the islands of Juana (Cuba) and Hispaniola (Santo Domingo), before returning to Spain. He left thirty-nine men to build a settlement called La Navidad in present-day Haiti.<br><br>
+                        He also kidnapped several Native Americans (between ten and twenty-five) to take back to Spain—only eight survived. Columbus brought back small amounts of gold as well as native birds and plants to show the richness of the continent he believed to be Asia.
+                    </div>
+                </div>
+                
+                <div id='ruscamp'>
+                    <div id='snow'></div>
+                </div>
+                
+                <div id="refor">
+                
+                </div>
+                
+                <div id='absol'>
+                
+                </div>
+                
+                <div id='enlight'>
+            
+            
+                </div>
             </div>
         </div>
         
