@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LocalStorage</title>
+    </head>
+    
+    <body>
+        <div id="controls">
+            <input type="text" id="name" placeholder="What's your name?"/>
+            <input type="text" id="color" placeholder="What's your fav colour?"/>
+            <button id="store">Store Locally</button>
+            
+        </div>
+        
+        <div id="display"></div>
+        
+        <script>
+            var mname = [];
+            
+            var localname = localStorage.getItem("name");
+            if(localname !=null){
+                mname = JSON.parse(localname);  
+                //document.getElementById("display").innerHTML = "Hi " +localname;
+                for(var i in mname){
+                    console.log(mname);
+                    var nh3 = document.createElement("h3");
+                    //nh3.innerHTML = "Hi "+mname[i];
+                    nh3.innerHTML = mname[i].name + " - " + mname[i].color
+                    document.getElementById("display").appendChild(nh3);
+                }
+            }else{
+                document.getElementById("display").innerHTML = "Tell me your name!";
+            }
+            
+            
+            document.getElementById("store").addEventListener("click", function(){
+                //mname = document.getElementById("name").value;
+                
+                //mname.push(document.getElementById("name").value);
+                var obj = {
+                    name:document.getElementById("name").value,
+                    color:document.getElementById("color").value
+                };
+                
+                mname.push(obj);
+                console.log(mname);
+                
+                var txt = JSON.stringify(mname);
+                localStorage.setItem("name", txt);
+                /*
+                    {
+                        name:mname
+                    }
+                */
+            })
+        
+        
+        </script>
+    </body>
+</html>
